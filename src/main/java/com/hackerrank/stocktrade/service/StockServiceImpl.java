@@ -3,14 +3,13 @@ package com.hackerrank.stocktrade.service;
 import com.hackerrank.stocktrade.domain.Stock;
 import com.hackerrank.stocktrade.domain.Trade;
 import com.hackerrank.stocktrade.repository.GenericRepository;
+
+import org.hibernate.service.spi.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.Date;
 import java.util.function.Predicate;
 
 

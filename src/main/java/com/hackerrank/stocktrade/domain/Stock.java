@@ -60,24 +60,5 @@ public class Stock {
         return symbol.equals(stock.symbol);
     }
 
-    public Double getDividendYield() {
 
-        if (type.equals(StockType.COMMON)) {
-            return calculateCommonDividedYield(tickerPrice);
-        }
-
-        return calculatePreferredDividedYield(tickerPrice);
-    }
-
-    public Double getPERatio() {
-        return tickerPrice / getDividendYield();
-    }
-
-    private Double calculatePreferredDividedYield(Double tickerPrice) {
-        return getFixedDividend() / tickerPrice;
-    }
-
-    private Double calculateCommonDividedYield(Double tickerPrice) {
-        return getLastDividend() / tickerPrice;
-    }
 }
