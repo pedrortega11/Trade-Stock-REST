@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class StockController {
 
+	
     private final StockService stockService;
     private final StockDtoConverter stockDtoConverter;
     private final StockConverter stockConverter;

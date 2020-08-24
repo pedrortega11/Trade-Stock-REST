@@ -8,9 +8,6 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 import java.util.function.Function;
 
-/**
- * Converts a Trade DTO into a Trade from the internal domain.
- */
 @Component
 public class TradeDtoConverter implements Function<TradeDto, Trade> {
     @Override

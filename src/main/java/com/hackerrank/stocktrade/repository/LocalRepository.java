@@ -7,14 +7,6 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-//import static com.google.common.collect.Sets.newHashSet;
-
-/**
- * Local implementation of a repository that stores entities in
- * a hash set.
- *
- * @param <T> Entity type.
- */
 abstract class LocalRepository<T> implements GenericRepository<T> {
     private final Set<T> entities;
 

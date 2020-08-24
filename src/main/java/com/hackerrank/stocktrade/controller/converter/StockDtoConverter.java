@@ -7,9 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.function.Function;
 
-/**
- * Converts a Stock DTO into a Stock from the internal domain.
- */
 @Component
 public class StockDtoConverter implements Function<StockDto, Stock> {
     @Override
